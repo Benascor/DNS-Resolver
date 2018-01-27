@@ -1,0 +1,805 @@
+python myresolver.py commandfile.txt
+
+***************************************************
+
+COMMAND:  print cache
+
+Answer Cache Contents:
+
+Referral Cache Contents:
+
+a.root-servers.net  :
+A  :  198.41.0.4
+AAAA  :  2001:503:ba3e::2:30
+
+
+***************************************************
+
+COMMAND:  resolve yahoo.com A
+
+id 30173
+opcode QUERY
+rcode NOERROR
+flags QR RD
+;QUESTION
+yahoo.com. IN A
+;ANSWER
+;AUTHORITY
+com. 172800 IN NS e.gtld-servers.net.
+com. 172800 IN NS b.gtld-servers.net.
+com. 172800 IN NS j.gtld-servers.net.
+com. 172800 IN NS m.gtld-servers.net.
+com. 172800 IN NS i.gtld-servers.net.
+com. 172800 IN NS f.gtld-servers.net.
+com. 172800 IN NS a.gtld-servers.net.
+com. 172800 IN NS g.gtld-servers.net.
+com. 172800 IN NS h.gtld-servers.net.
+com. 172800 IN NS l.gtld-servers.net.
+com. 172800 IN NS k.gtld-servers.net.
+com. 172800 IN NS c.gtld-servers.net.
+com. 172800 IN NS d.gtld-servers.net.
+;ADDITIONAL
+e.gtld-servers.net. 172800 IN A 192.12.94.30
+e.gtld-servers.net. 172800 IN AAAA 2001:502:1ca1::30
+b.gtld-servers.net. 172800 IN A 192.33.14.30
+b.gtld-servers.net. 172800 IN AAAA 2001:503:231d::2:30
+j.gtld-servers.net. 172800 IN A 192.48.79.30
+j.gtld-servers.net. 172800 IN AAAA 2001:502:7094::30
+m.gtld-servers.net. 172800 IN A 192.55.83.30
+m.gtld-servers.net. 172800 IN AAAA 2001:501:b1f9::30
+i.gtld-servers.net. 172800 IN A 192.43.172.30
+i.gtld-servers.net. 172800 IN AAAA 2001:503:39c1::30
+f.gtld-servers.net. 172800 IN A 192.35.51.30
+a.gtld-servers.net. 172800 IN A 192.5.6.30
+
+id 5529
+opcode QUERY
+rcode NOERROR
+flags QR RD
+;QUESTION
+yahoo.com. IN A
+;ANSWER
+;AUTHORITY
+yahoo.com. 172800 IN NS ns1.yahoo.com.
+yahoo.com. 172800 IN NS ns5.yahoo.com.
+yahoo.com. 172800 IN NS ns2.yahoo.com.
+yahoo.com. 172800 IN NS ns3.yahoo.com.
+yahoo.com. 172800 IN NS ns4.yahoo.com.
+;ADDITIONAL
+ns1.yahoo.com. 172800 IN AAAA 2001:4998:130::1001
+ns1.yahoo.com. 172800 IN A 68.180.131.16
+ns5.yahoo.com. 172800 IN A 119.160.247.124
+ns2.yahoo.com. 172800 IN AAAA 2001:4998:140::1002
+ns2.yahoo.com. 172800 IN A 68.142.255.16
+ns3.yahoo.com. 172800 IN A 203.84.221.53
+ns3.yahoo.com. 172800 IN AAAA 2406:8600:b8:fe03::1003
+ns4.yahoo.com. 172800 IN A 98.138.11.157
+
+_____________________________________________________
+
+*** QUERY  yahoo.com.  for RRType  A
+id 33932
+opcode QUERY
+rcode NOERROR
+flags QR AA RD
+;QUESTION
+yahoo.com. IN A
+;ANSWER
+yahoo.com. 1800 IN A 98.138.252.38
+yahoo.com. 1800 IN A 206.190.39.42
+yahoo.com. 1800 IN A 98.139.180.180
+;AUTHORITY
+yahoo.com. 172800 IN NS ns4.yahoo.com.
+yahoo.com. 172800 IN NS ns3.yahoo.com.
+yahoo.com. 172800 IN NS ns1.yahoo.com.
+yahoo.com. 172800 IN NS ns2.yahoo.com.
+yahoo.com. 172800 IN NS ns5.yahoo.com.
+;ADDITIONAL
+ns1.yahoo.com. 1209600 IN A 68.180.131.16
+ns2.yahoo.com. 1209600 IN A 68.142.255.16
+ns3.yahoo.com. 1209600 IN A 203.84.221.53
+ns4.yahoo.com. 1209600 IN A 98.138.11.157
+ns5.yahoo.com. 1209600 IN A 119.160.247.124
+ns1.yahoo.com. 86400 IN AAAA 2001:4998:130::1001
+ns2.yahoo.com. 86400 IN AAAA 2001:4998:140::1002
+ns3.yahoo.com. 86400 IN AAAA 2406:8600:b8:fe03::1003
+
+_____________________________________________________
+
+Total latency:  0.13083505630493164
+
+***************************************************
+
+COMMAND:  resolve www.secure64.com A
+
+*** Fetching nameserver  e.gtld-servers.net.  for  com.  from the cache.
+id 27656
+opcode QUERY
+rcode NOERROR
+flags QR RD
+;QUESTION
+www.secure64.com. IN A
+;ANSWER
+;AUTHORITY
+secure64.com. 172800 IN NS ns1.secure64.com.
+secure64.com. 172800 IN NS ns2.secure64.com.
+;ADDITIONAL
+ns1.secure64.com. 172800 IN A 64.92.220.221
+ns2.secure64.com. 172800 IN A 216.17.193.194
+
+_____________________________________________________
+
+*** QUERY  www.secure64.com.  for RRType  A
+id 17878
+opcode QUERY
+rcode NOERROR
+flags QR AA RD
+;QUESTION
+www.secure64.com. IN A
+;ANSWER
+www.secure64.com. 3600 IN A 45.79.149.69
+;AUTHORITY
+secure64.com. 3600 IN NS ns1.secure64.com.
+secure64.com. 3600 IN NS ns2.secure64.com.
+;ADDITIONAL
+ns1.secure64.com. 3600 IN A 64.92.220.221
+ns2.secure64.com. 3600 IN A 216.17.193.194
+
+_____________________________________________________
+
+Total latency:  0.06925296783447266
+
+***************************************************
+
+COMMAND:  resolve www.secure64.com A
+
+_____________________________________________________
+
+*** Fetching  www.secure64.com. A  from cache.
+id 17878
+opcode QUERY
+rcode NOERROR
+flags QR AA RD
+;QUESTION
+www.secure64.com. IN A
+;ANSWER
+www.secure64.com. 3600 IN A 45.79.149.69
+;AUTHORITY
+secure64.com. 3600 IN NS ns1.secure64.com.
+secure64.com. 3600 IN NS ns2.secure64.com.
+;ADDITIONAL
+ns1.secure64.com. 3600 IN A 64.92.220.221
+ns2.secure64.com. 3600 IN A 216.17.193.194
+
+_____________________________________________________
+
+Total latency:  3.981590270996094e-05
+
+***************************************************
+
+COMMAND:  resolve www.secure64.com AAAA
+
+*** Fetching nameserver  e.gtld-servers.net.  for  com.  from the cache.
+id 55747
+opcode QUERY
+rcode NOERROR
+flags QR RD
+;QUESTION
+www.secure64.com. IN AAAA
+;ANSWER
+;AUTHORITY
+secure64.com. 172800 IN NS ns1.secure64.com.
+secure64.com. 172800 IN NS ns2.secure64.com.
+;ADDITIONAL
+ns1.secure64.com. 172800 IN A 64.92.220.221
+ns2.secure64.com. 172800 IN A 216.17.193.194
+
+_____________________________________________________
+
+*** QUERY  www.secure64.com.  for RRType  AAAA
+id 28686
+opcode QUERY
+rcode NOERROR
+flags QR AA RD
+;QUESTION
+www.secure64.com. IN AAAA
+;ANSWER
+;AUTHORITY
+secure64.com. 3600 IN SOA ns1.secure64.com. hostmaster.secure64.com. 2017113000 14400 3600 1209600 3600
+;ADDITIONAL
+
+_____________________________________________________
+
+Total latency:  0.06732988357543945
+
+***************************************************
+
+COMMAND:  resolve nobody.secure64.com A
+
+*** Fetching nameserver  e.gtld-servers.net.  for  com.  from the cache.
+id 3260
+opcode QUERY
+rcode NOERROR
+flags QR RD
+;QUESTION
+nobody.secure64.com. IN A
+;ANSWER
+;AUTHORITY
+secure64.com. 172800 IN NS ns1.secure64.com.
+secure64.com. 172800 IN NS ns2.secure64.com.
+;ADDITIONAL
+ns1.secure64.com. 172800 IN A 64.92.220.221
+ns2.secure64.com. 172800 IN A 216.17.193.194
+
+_____________________________________________________
+
+*** QUERY  nobody.secure64.com.  for RRType  A
+id 41893
+opcode QUERY
+rcode NXDOMAIN
+flags QR AA RD
+;QUESTION
+nobody.secure64.com. IN A
+;ANSWER
+;AUTHORITY
+secure64.com. 3600 IN SOA ns1.secure64.com. hostmaster.secure64.com. 2017113000 14400 3600 1209600 3600
+;ADDITIONAL
+
+_____________________________________________________
+
+Total latency:  0.06438994407653809
+
+***************************************************
+
+COMMAND:  resolve secure64.com TXT
+
+*** Fetching nameserver  ns1.secure64.com.  for  secure64.com.  from the cache.
+id 10487
+opcode QUERY
+rcode NOERROR
+flags QR RD
+;QUESTION
+secure64.com. IN TXT
+;ANSWER
+;AUTHORITY
+secure64.com. 172800 IN NS ns1.secure64.com.
+secure64.com. 172800 IN NS ns2.secure64.com.
+;ADDITIONAL
+ns1.secure64.com. 172800 IN A 64.92.220.221
+ns2.secure64.com. 172800 IN A 216.17.193.194
+
+_____________________________________________________
+
+*** QUERY  secure64.com.  for RRType  TXT
+id 42749
+opcode QUERY
+rcode NOERROR
+flags QR AA RD
+;QUESTION
+secure64.com. IN TXT
+;ANSWER
+secure64.com. 3600 IN TXT "pax8validate"
+secure64.com. 3600 IN TXT "v=spf1 ip4:64.92.221.180 include:whitelabel.secure64.com ~all"
+secure64.com. 3600 IN TXT "google-site-verification=o_B3brpR9L17YhQqb5Y5dg7mzCecvcAhidfe1oMTpCc"
+;AUTHORITY
+secure64.com. 3600 IN NS ns1.secure64.com.
+secure64.com. 3600 IN NS ns2.secure64.com.
+;ADDITIONAL
+ns1.secure64.com. 3600 IN A 64.92.220.221
+ns2.secure64.com. 3600 IN A 216.17.193.194
+
+_____________________________________________________
+
+Total latency:  0.08115792274475098
+
+***************************************************
+
+COMMAND:  resolve secure64.com MX
+
+*** Fetching nameserver  ns1.secure64.com.  for  secure64.com.  from the cache.
+id 33806
+opcode QUERY
+rcode NOERROR
+flags QR RD
+;QUESTION
+secure64.com. IN MX
+;ANSWER
+;AUTHORITY
+secure64.com. 172800 IN NS ns1.secure64.com.
+secure64.com. 172800 IN NS ns2.secure64.com.
+;ADDITIONAL
+ns1.secure64.com. 172800 IN A 64.92.220.221
+ns2.secure64.com. 172800 IN A 216.17.193.194
+
+_____________________________________________________
+
+*** QUERY  secure64.com.  for RRType  MX
+id 2250
+opcode QUERY
+rcode NOERROR
+flags QR AA RD
+;QUESTION
+secure64.com. IN MX
+;ANSWER
+secure64.com. 3600 IN MX 10 cluster6.us.messagelabs.com.
+secure64.com. 3600 IN MX 20 cluster6a.us.messagelabs.com.
+;AUTHORITY
+secure64.com. 3600 IN NS ns1.secure64.com.
+secure64.com. 3600 IN NS ns2.secure64.com.
+;ADDITIONAL
+ns1.secure64.com. 3600 IN A 64.92.220.221
+ns2.secure64.com. 3600 IN A 216.17.193.194
+
+_____________________________________________________
+
+Total latency:  0.06718230247497559
+
+***************************************************
+
+COMMAND:  resolve www.cnn.com A
+
+*** Fetching nameserver  e.gtld-servers.net.  for  com.  from the cache.
+id 3429
+opcode QUERY
+rcode NOERROR
+flags QR RD
+;QUESTION
+www.cnn.com. IN A
+;ANSWER
+;AUTHORITY
+cnn.com. 172800 IN NS ns-47.awsdns-05.com.
+cnn.com. 172800 IN NS ns-576.awsdns-08.net.
+cnn.com. 172800 IN NS ns-1630.awsdns-11.co.uk.
+cnn.com. 172800 IN NS ns-1086.awsdns-07.org.
+;ADDITIONAL
+ns-47.awsdns-05.com. 172800 IN A 205.251.192.47
+ns-576.awsdns-08.net. 172800 IN A 205.251.194.64
+
+_____________________________________________________
+
+*** QUERY  www.cnn.com.  for RRType  A
+id 50615
+opcode QUERY
+rcode NOERROR
+flags QR AA RD
+;QUESTION
+www.cnn.com. IN A
+;ANSWER
+www.cnn.com. 300 IN CNAME turner-tls.map.fastly.net.
+;AUTHORITY
+cnn.com. 3600 IN NS ns-1086.awsdns-07.org.
+cnn.com. 3600 IN NS ns-1630.awsdns-11.co.uk.
+cnn.com. 3600 IN NS ns-47.awsdns-05.com.
+cnn.com. 3600 IN NS ns-576.awsdns-08.net.
+;ADDITIONAL
+
+_____________________________________________________
+
+Total latency:  0.0899209976196289
+
+***************************************************
+
+COMMAND:  resolve www.cnn.com A
+
+_____________________________________________________
+
+*** Fetching  www.cnn.com. A  from cache.
+id 50615
+opcode QUERY
+rcode NOERROR
+flags QR AA RD
+;QUESTION
+www.cnn.com. IN A
+;ANSWER
+www.cnn.com. 300 IN CNAME turner-tls.map.fastly.net.
+;AUTHORITY
+cnn.com. 3600 IN NS ns-1086.awsdns-07.org.
+cnn.com. 3600 IN NS ns-1630.awsdns-11.co.uk.
+cnn.com. 3600 IN NS ns-47.awsdns-05.com.
+cnn.com. 3600 IN NS ns-576.awsdns-08.net.
+;ADDITIONAL
+
+_____________________________________________________
+
+Total latency:  0.00040721893310546875
+
+***************************************************
+
+COMMAND:  resolve android.g5e.com A
+
+*** Fetching nameserver  e.gtld-servers.net.  for  com.  from the cache.
+id 53293
+opcode QUERY
+rcode NOERROR
+flags QR RD
+;QUESTION
+android.g5e.com. IN A
+;ANSWER
+;AUTHORITY
+g5e.com. 172800 IN NS pdns01.domaincontrol.com.
+g5e.com. 172800 IN NS pdns02.domaincontrol.com.
+;ADDITIONAL
+pdns01.domaincontrol.com. 172800 IN A 216.69.185.50
+pdns01.domaincontrol.com. 172800 IN AAAA 2607:f208:207::32
+pdns02.domaincontrol.com. 172800 IN A 208.109.255.50
+pdns02.domaincontrol.com. 172800 IN AAAA 2607:f208:303::32
+
+_____________________________________________________
+
+*** QUERY  android.g5e.com.  for RRType  A
+id 53857
+opcode QUERY
+rcode NOERROR
+flags QR AA RD
+;QUESTION
+android.g5e.com. IN A
+;ANSWER
+android.g5e.com. 600 IN CNAME d.gcdn.co.
+;AUTHORITY
+;ADDITIONAL
+
+_____________________________________________________
+
+Total latency:  0.1466379165649414
+
+***************************************************
+
+COMMAND:  resolve gmal.com A
+
+*** Fetching nameserver  e.gtld-servers.net.  for  com.  from the cache.
+id 10375
+opcode QUERY
+rcode NOERROR
+flags QR RD
+;QUESTION
+gmal.com. IN A
+;ANSWER
+;AUTHORITY
+gmal.com. 172800 IN NS ns1.googledomains.com.
+gmal.com. 172800 IN NS ns2.googledomains.com.
+gmal.com. 172800 IN NS ns3.googledomains.com.
+gmal.com. 172800 IN NS ns4.googledomains.com.
+;ADDITIONAL
+ns1.googledomains.com. 172800 IN AAAA 2001:4860:4802:32::63
+ns1.googledomains.com. 172800 IN A 216.239.32.99
+ns2.googledomains.com. 172800 IN AAAA 2001:4860:4802:34::63
+ns2.googledomains.com. 172800 IN A 216.239.34.99
+ns3.googledomains.com. 172800 IN AAAA 2001:4860:4802:36::63
+ns3.googledomains.com. 172800 IN A 216.239.36.99
+ns4.googledomains.com. 172800 IN AAAA 2001:4860:4802:38::63
+ns4.googledomains.com. 172800 IN A 216.239.38.99
+
+_____________________________________________________
+
+*** QUERY  gmal.com.  for RRType  A
+id 44307
+opcode QUERY
+rcode NOERROR
+flags QR AA RD
+;QUESTION
+gmal.com. IN A
+;ANSWER
+;AUTHORITY
+gmal.com. 300 IN SOA ns1.googledomains.com. dns-admin.google.com. 1879048194 21600 3600 1209600 300
+;ADDITIONAL
+
+_____________________________________________________
+
+Total latency:  0.08319735527038574
+
+***************************************************
+
+COMMAND:  resolve cotssl.net A
+
+id 10724
+opcode QUERY
+rcode NOERROR
+flags QR RD
+;QUESTION
+cotssl.net. IN A
+;ANSWER
+;AUTHORITY
+net. 172800 IN NS e.gtld-servers.net.
+net. 172800 IN NS f.gtld-servers.net.
+net. 172800 IN NS m.gtld-servers.net.
+net. 172800 IN NS i.gtld-servers.net.
+net. 172800 IN NS j.gtld-servers.net.
+net. 172800 IN NS b.gtld-servers.net.
+net. 172800 IN NS a.gtld-servers.net.
+net. 172800 IN NS c.gtld-servers.net.
+net. 172800 IN NS k.gtld-servers.net.
+net. 172800 IN NS h.gtld-servers.net.
+net. 172800 IN NS l.gtld-servers.net.
+net. 172800 IN NS g.gtld-servers.net.
+net. 172800 IN NS d.gtld-servers.net.
+;ADDITIONAL
+e.gtld-servers.net. 172800 IN A 192.12.94.30
+e.gtld-servers.net. 172800 IN AAAA 2001:502:1ca1::30
+f.gtld-servers.net. 172800 IN A 192.35.51.30
+f.gtld-servers.net. 172800 IN AAAA 2001:503:d414::30
+m.gtld-servers.net. 172800 IN A 192.55.83.30
+m.gtld-servers.net. 172800 IN AAAA 2001:501:b1f9::30
+i.gtld-servers.net. 172800 IN A 192.43.172.30
+i.gtld-servers.net. 172800 IN AAAA 2001:503:39c1::30
+j.gtld-servers.net. 172800 IN A 192.48.79.30
+j.gtld-servers.net. 172800 IN AAAA 2001:502:7094::30
+b.gtld-servers.net. 172800 IN A 192.33.14.30
+a.gtld-servers.net. 172800 IN A 192.5.6.30
+
+id 60832
+opcode QUERY
+rcode NOERROR
+flags QR RD
+;QUESTION
+cotssl.net. IN A
+;ANSWER
+;AUTHORITY
+cotssl.net. 172800 IN NS dns11.cotdns.net.
+cotssl.net. 172800 IN NS dns12.cotdns.net.
+;ADDITIONAL
+dns11.cotdns.net. 172800 IN A 208.93.136.11
+dns12.cotdns.net. 172800 IN A 208.93.136.12
+
+_____________________________________________________
+
+*** QUERY  cotssl.net.  for RRType  A
+None
+
+_____________________________________________________
+
+Total latency:  5.087759494781494
+
+***************************************************
+
+COMMAND:  print cache
+
+Answer Cache Contents:
+
+yahoo.com.  :
+A  :  id 33932
+opcode QUERY
+rcode NOERROR
+flags QR AA RD
+;QUESTION
+yahoo.com. IN A
+;ANSWER
+yahoo.com. 1800 IN A 98.138.252.38
+yahoo.com. 1800 IN A 206.190.39.42
+yahoo.com. 1800 IN A 98.139.180.180
+;AUTHORITY
+yahoo.com. 172800 IN NS ns4.yahoo.com.
+yahoo.com. 172800 IN NS ns3.yahoo.com.
+yahoo.com. 172800 IN NS ns1.yahoo.com.
+yahoo.com. 172800 IN NS ns2.yahoo.com.
+yahoo.com. 172800 IN NS ns5.yahoo.com.
+;ADDITIONAL
+ns1.yahoo.com. 1209600 IN A 68.180.131.16
+ns2.yahoo.com. 1209600 IN A 68.142.255.16
+ns3.yahoo.com. 1209600 IN A 203.84.221.53
+ns4.yahoo.com. 1209600 IN A 98.138.11.157
+ns5.yahoo.com. 1209600 IN A 119.160.247.124
+ns1.yahoo.com. 86400 IN AAAA 2001:4998:130::1001
+ns2.yahoo.com. 86400 IN AAAA 2001:4998:140::1002
+ns3.yahoo.com. 86400 IN AAAA 2406:8600:b8:fe03::1003
+
+www.secure64.com.  :
+A  :  id 17878
+opcode QUERY
+rcode NOERROR
+flags QR AA RD
+;QUESTION
+www.secure64.com. IN A
+;ANSWER
+www.secure64.com. 3600 IN A 45.79.149.69
+;AUTHORITY
+secure64.com. 3600 IN NS ns1.secure64.com.
+secure64.com. 3600 IN NS ns2.secure64.com.
+;ADDITIONAL
+ns1.secure64.com. 3600 IN A 64.92.220.221
+ns2.secure64.com. 3600 IN A 216.17.193.194
+AAAA  :  id 28686
+opcode QUERY
+rcode NOERROR
+flags QR AA RD
+;QUESTION
+www.secure64.com. IN AAAA
+;ANSWER
+;AUTHORITY
+secure64.com. 3600 IN SOA ns1.secure64.com. hostmaster.secure64.com. 2017113000 14400 3600 1209600 3600
+;ADDITIONAL
+
+nobody.secure64.com.  :
+A  :  id 41893
+opcode QUERY
+rcode NXDOMAIN
+flags QR AA RD
+;QUESTION
+nobody.secure64.com. IN A
+;ANSWER
+;AUTHORITY
+secure64.com. 3600 IN SOA ns1.secure64.com. hostmaster.secure64.com. 2017113000 14400 3600 1209600 3600
+;ADDITIONAL
+
+secure64.com.  :
+TXT  :  id 42749
+opcode QUERY
+rcode NOERROR
+flags QR AA RD
+;QUESTION
+secure64.com. IN TXT
+;ANSWER
+secure64.com. 3600 IN TXT "pax8validate"
+secure64.com. 3600 IN TXT "v=spf1 ip4:64.92.221.180 include:whitelabel.secure64.com ~all"
+secure64.com. 3600 IN TXT "google-site-verification=o_B3brpR9L17YhQqb5Y5dg7mzCecvcAhidfe1oMTpCc"
+;AUTHORITY
+secure64.com. 3600 IN NS ns1.secure64.com.
+secure64.com. 3600 IN NS ns2.secure64.com.
+;ADDITIONAL
+ns1.secure64.com. 3600 IN A 64.92.220.221
+ns2.secure64.com. 3600 IN A 216.17.193.194
+MX  :  id 2250
+opcode QUERY
+rcode NOERROR
+flags QR AA RD
+;QUESTION
+secure64.com. IN MX
+;ANSWER
+secure64.com. 3600 IN MX 10 cluster6.us.messagelabs.com.
+secure64.com. 3600 IN MX 20 cluster6a.us.messagelabs.com.
+;AUTHORITY
+secure64.com. 3600 IN NS ns1.secure64.com.
+secure64.com. 3600 IN NS ns2.secure64.com.
+;ADDITIONAL
+ns1.secure64.com. 3600 IN A 64.92.220.221
+ns2.secure64.com. 3600 IN A 216.17.193.194
+
+www.cnn.com.  :
+A  :  id 50615
+opcode QUERY
+rcode NOERROR
+flags QR AA RD
+;QUESTION
+www.cnn.com. IN A
+;ANSWER
+www.cnn.com. 300 IN CNAME turner-tls.map.fastly.net.
+;AUTHORITY
+cnn.com. 3600 IN NS ns-1086.awsdns-07.org.
+cnn.com. 3600 IN NS ns-1630.awsdns-11.co.uk.
+cnn.com. 3600 IN NS ns-47.awsdns-05.com.
+cnn.com. 3600 IN NS ns-576.awsdns-08.net.
+;ADDITIONAL
+
+android.g5e.com.  :
+A  :  id 53857
+opcode QUERY
+rcode NOERROR
+flags QR AA RD
+;QUESTION
+android.g5e.com. IN A
+;ANSWER
+android.g5e.com. 600 IN CNAME d.gcdn.co.
+;AUTHORITY
+;ADDITIONAL
+
+gmal.com.  :
+A  :  id 44307
+opcode QUERY
+rcode NOERROR
+flags QR AA RD
+;QUESTION
+gmal.com. IN A
+;ANSWER
+;AUTHORITY
+gmal.com. 300 IN SOA ns1.googledomains.com. dns-admin.google.com. 1879048194 21600 3600 1209600 300
+;ADDITIONAL
+
+Referral Cache Contents:
+
+a.root-servers.net  :
+A  :  198.41.0.4
+AAAA  :  2001:503:ba3e::2:30
+
+com.  :
+NS  :  ['e.gtld-servers.net.', 'b.gtld-servers.net.', 'j.gtld-servers.net.', 'm.gtld-servers.net.', 'i.gtld-servers.net.', 'f.gtld-servers.net.', 'a.gtld-servers.net.', 'g.gtld-servers.net.', 'h.gtld-servers.net.', 'l.gtld-servers.net.', 'k.gtld-servers.net.', 'c.gtld-servers.net.', 'd.gtld-servers.net.']
+
+e.gtld-servers.net.  :
+AAAA  :  2001:502:1ca1::30
+
+b.gtld-servers.net.  :
+A  :  192.33.14.30
+
+j.gtld-servers.net.  :
+AAAA  :  2001:502:7094::30
+
+m.gtld-servers.net.  :
+AAAA  :  2001:501:b1f9::30
+
+i.gtld-servers.net.  :
+AAAA  :  2001:503:39c1::30
+
+f.gtld-servers.net.  :
+AAAA  :  2001:503:d414::30
+
+a.gtld-servers.net.  :
+A  :  192.5.6.30
+
+yahoo.com.  :
+NS  :  ['ns1.yahoo.com.', 'ns5.yahoo.com.', 'ns2.yahoo.com.', 'ns3.yahoo.com.', 'ns4.yahoo.com.']
+
+ns1.yahoo.com.  :
+A  :  68.180.131.16
+
+ns5.yahoo.com.  :
+A  :  119.160.247.124
+
+ns2.yahoo.com.  :
+A  :  68.142.255.16
+
+ns3.yahoo.com.  :
+AAAA  :  2406:8600:b8:fe03::1003
+
+ns4.yahoo.com.  :
+A  :  98.138.11.157
+
+secure64.com.  :
+NS  :  ['ns1.secure64.com.', 'ns2.secure64.com.', 'ns1.secure64.com.', 'ns2.secure64.com.', 'ns1.secure64.com.', 'ns2.secure64.com.', 'ns1.secure64.com.', 'ns2.secure64.com.', 'ns1.secure64.com.', 'ns2.secure64.com.']
+SOA  :  ['ns1.secure64.com.', 'ns1.secure64.com.']
+
+ns1.secure64.com.  :
+A  :  64.92.220.221
+
+ns2.secure64.com.  :
+A  :  216.17.193.194
+
+cnn.com.  :
+NS  :  ['ns-47.awsdns-05.com.', 'ns-576.awsdns-08.net.', 'ns-1630.awsdns-11.co.uk.', 'ns-1086.awsdns-07.org.', 'ns-1086.awsdns-07.org.', 'ns-1630.awsdns-11.co.uk.', 'ns-47.awsdns-05.com.', 'ns-576.awsdns-08.net.']
+
+ns-47.awsdns-05.com.  :
+A  :  205.251.192.47
+
+ns-576.awsdns-08.net.  :
+A  :  205.251.194.64
+
+g5e.com.  :
+NS  :  ['pdns01.domaincontrol.com.', 'pdns02.domaincontrol.com.']
+
+pdns01.domaincontrol.com.  :
+AAAA  :  2607:f208:207::32
+
+pdns02.domaincontrol.com.  :
+AAAA  :  2607:f208:303::32
+
+gmal.com.  :
+NS  :  ['ns1.googledomains.com.', 'ns2.googledomains.com.', 'ns3.googledomains.com.', 'ns4.googledomains.com.']
+SOA  :  ['ns1.googledomains.com.']
+
+ns1.googledomains.com.  :
+A  :  216.239.32.99
+
+ns2.googledomains.com.  :
+A  :  216.239.34.99
+
+ns3.googledomains.com.  :
+A  :  216.239.36.99
+
+ns4.googledomains.com.  :
+A  :  216.239.38.99
+
+net.  :
+NS  :  ['e.gtld-servers.net.', 'f.gtld-servers.net.', 'm.gtld-servers.net.', 'i.gtld-servers.net.', 'j.gtld-servers.net.', 'b.gtld-servers.net.', 'a.gtld-servers.net.', 'c.gtld-servers.net.', 'k.gtld-servers.net.', 'h.gtld-servers.net.', 'l.gtld-servers.net.', 'g.gtld-servers.net.', 'd.gtld-servers.net.']
+
+cotssl.net.  :
+NS  :  ['dns11.cotdns.net.', 'dns12.cotdns.net.']
+
+dns11.cotdns.net.  :
+A  :  208.93.136.11
+
+dns12.cotdns.net.  :
+A  :  208.93.136.12
+
+
+***************************************************
+
+COMMAND:  quit
+
+Program terminated
